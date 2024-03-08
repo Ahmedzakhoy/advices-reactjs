@@ -14,8 +14,10 @@ function App() {
     getAdvice();
   }, []);
   return (
-    <div>
-      <h1>{advice}</h1>
+    <div className="container">
+      <h1>Advices</h1>
+      <p>Read advices in your free time</p>
+      <h2>{advice}</h2>
       <button onClick={getAdvice}>Get Another Advice</button>
       <p>
         You have read <strong>{count}</strong> pieces of advice in this session
